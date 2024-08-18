@@ -1,0 +1,106 @@
+/* General Styles */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+#navbar {
+    margin-right: 100px;
+    justify-content: right;
+    text-align: right;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Image Styling */
+#image {
+    width: 390px;
+    height: 280px;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+}
+
+#image:hover {
+    transform: scale(1.1);
+}
+
+/* Text Animation */
+.para {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-left: 70px;
+    transition: all 0.5s ease;
+    color: var(--text-color);
+}
+
+.animate-text {
+    animation: colorChange 1s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: var(--primary-color); transform: scale(1); }
+    100% { color: var(--secondary-color); transform: scale(1.1); }
+}
+
+/* Section Headings */
+h2 {
+    color: #4CAF50 !important;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* MS Office Box Styling */
+.ms-office-box {
+    background-color: #ffffff;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    color: green;
+    padding: 20px;
+    margin: 10px 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ms-office-box:hover {
+    will-change: transform, box-shadow;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+h3:hover {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}

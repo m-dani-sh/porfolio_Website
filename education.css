@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Light background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 50px;
+}
+
+/* Headings */
+h1 {
+    color: #4CAF50; /* Green color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Education Section */
+.education-section {
+    margin-bottom: 30px;
+}
+
+.education-section p {
+    margin: 5px 0;
+}
